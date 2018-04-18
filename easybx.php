@@ -9,7 +9,8 @@
     $html_replace_to = '<?= Loc::getMessage(\'' . $prefix . '_\1\') ?>';
 
     if($file === false || $prefix === false){
-        echo "example: php test.php PREFIX";
+        echo "example: php test.php PREFIX\n";
+        die;
     }
 
     $text = file_get_contents($file);

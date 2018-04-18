@@ -5,9 +5,10 @@
 
     $pattern = "#\+\+([^\s\+]+) = (((?!\+\+).)+)\+\+#";
     $html_replace_to = '=\1';
-
+    
     if($file === false || $variables_file === false){
-        echo "example: php test.pug ../variables.js";
+        echo "example: php test.pug ../variables.js\n";
+        die;
     }
 
     $text = file_get_contents($file);
