@@ -2,7 +2,7 @@
 
 $file = (isset($argv[1]) ? $argv[1] : false);
 $pattern = "#\+\+([^\s\+]+) = (((?!\+\+).)+)\+\+#";
-$html_replace_to = '={{\1}}';
+$html_replace_to = '{{\1}}';
 
 if ($file === false) {
     echo "example: php blade_separator.php tests/test.html\n";
